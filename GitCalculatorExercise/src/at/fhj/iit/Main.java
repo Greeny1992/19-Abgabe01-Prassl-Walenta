@@ -1,23 +1,21 @@
 package at.fhj.iit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
-		
-		Calculator calc = new CalculatorImpl();
-		
-		calc.add(20);	// currently highest number
-		calc.add(4);	// currently lowester number
-		calc.add(16);
-		
-		// add other integers
-		
-		// output lowest number 
-		
-		// output highest number
-		
-		// output sum of all numbers
-
+		List<Integer> intList = new ArrayList<>();
+	}
+	public static int getMinimum(List<Integer> intList){
+		return 0;
+	}
+	public static int getMaximum(List<Integer> intList){
+		return 0;
+	}
+	public static void addValue(int val, List<Integer> intList){
+		intList.add(val);
 	}
 
 }
