@@ -8,7 +8,12 @@ public class CalculatorImpl implements Calculator{
 
     @Override
     public int getMaximum() {
-        return 0;
+        int max = intList.get(0);
+        for(int actualVal : intList){
+            if(actualVal > max)
+                max = actualVal;
+        }
+        return max;
     }
 
     @Override
