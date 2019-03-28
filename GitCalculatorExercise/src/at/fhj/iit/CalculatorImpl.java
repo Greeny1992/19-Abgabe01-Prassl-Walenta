@@ -31,4 +31,9 @@ public class CalculatorImpl implements Calculator{
         intList.add(val);
     }
 
+    public int sum(){
+        int sum=0;
+        for(int actualVal : intList) sum += actualVal;
+        return sum;
+    }
 }

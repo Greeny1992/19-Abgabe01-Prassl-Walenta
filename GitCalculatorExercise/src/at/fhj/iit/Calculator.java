@@ -62,6 +62,8 @@ public interface Calculator {
 	 *
 	 */
 
+	int sum();
+
 	int getMaximum();
 
 	int getMinimum();
