@@ -2,7 +2,6 @@ package at.fhj.iit;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
 
 public class CalculatorImpl implements Calculator{
     List<Integer> intList = new ArrayList<>();
@@ -33,6 +32,8 @@ public class CalculatorImpl implements Calculator{
 
     @Override
     public int sum(){
-        return intList.stream().mapToInt(Integer::intValue).sum();
+        int sum=0;
+        for(int actualVal : intList) sum += actualVal;
+        return sum;
     }
 }
